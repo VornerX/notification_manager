@@ -1,0 +1,14 @@
+.console-input, .console-input:focus {
+    font-family: Menlo, Consolas, "Andale Mono", "Lucida Console", monospace;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#message_log {
+    min-height: 300px;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #000000;
+    color: #ffffff;
+}

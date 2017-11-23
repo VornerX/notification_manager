@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    <form>
+        <div class="form-group">
+            <label for="text_to_send">Text to send</label>
+            <input type="text" class="form-control console-input" id="text_to_send"
+                   aria-describedby="emailHelp" placeholder="Enter text">
+            <small id="sendHelp" class="form-text text-muted">
+                Message will be received through websocket, and sent back.
+            </small>
+        </div>
+        <button type="button" id="send" class="btn btn-primary">
+            <i class="fa fa-space-shuttle"></i> &nbsp;
+            Send text
+        </button>
+        <button id="clear_log" type="button" class="btn btn-danger pull-right">
+            <i class="fa fa-trash"></i> &nbsp;
+            Clear log
+        </button>
+    </form>
+
+    <hr>
+    <div class="form-group">
+    <label for="message_log">Message log</label>
+
+    <textarea class="form-control console-input" id="message_log"
+              readonly></textarea>
+    </div>
+
+
+
+
+{% endblock %}
